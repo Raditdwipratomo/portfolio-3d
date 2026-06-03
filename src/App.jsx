@@ -4,6 +4,8 @@ import About from "./section/About";
 import Projects from "./section/Projects";
 import Experiences from "./section/Experiences";
 import Testimonial from "./section/Testimonial";
+import Contact from "./section/Contact";
+import Footer from "./section/Footer";
 
 const App = () => {
   return (
@@ -14,10 +16,8 @@ const App = () => {
       <Projects />
       <Experiences />
       <Testimonial />
-      <section className="min-h-screen" />
-      <section className="min-h-screen" />
-      <section className="min-h-screen" />
-      <section className="min-h-screen" />
+      <Contact />
+      <Footer />
     </div>
   );
 };
