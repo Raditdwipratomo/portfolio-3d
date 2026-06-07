@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { motion } from "motion/react";
+import DownloadCV from "../components/DownloadCV";
 
 function Navigation() {
   return (
@@ -23,6 +24,9 @@ function Navigation() {
         <a href="#contact" className="nav-link">
           Contact
         </a>
+      </li>
+      <li className="nav-li">
+        <DownloadCV />
       </li>
     </ul>
   );

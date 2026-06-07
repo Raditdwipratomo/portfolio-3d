@@ -1,6 +1,8 @@
 import { img, p } from "motion/react-client";
 import { useState } from "react";
 import { motion } from "motion/react";
+import { ArrowRight } from "lucide-react";
+import { ArrowLeft } from "lucide-react";
 
 const ProjectDetails = ({
   title,
@@ -12,6 +14,17 @@ const ProjectDetails = ({
   closeModal,
 }) => {
   const [isHidden, setIsHidden] = useState();
+
+  const [index, setIndex] = useState(0);
+
+  const nextImage = () => {
+    setIndex((index + 1) % images.length);
+  };
+
+  const prevImage = () => {
+    setIndex((index - 1 + images.length) % images.length);
+  };
+
   return (
     <div className="fixed inset-0 z-50 flex items-center justify-center w-full h-full overflow-hidden backdrop-blur-sm">
       <motion.div
@@ -25,7 +38,9 @@ const ProjectDetails = ({
         >
           <img src="assets/close.svg" alt="" className="w-6 h-6" />
         </button>
+
         <img src={image} alt="" className="w-full rounded-t-2xl" />
+
         <div className="p-5">
           <h5 className="mb-2 text-2xl font-bold text-white">{title}</h5>
           <p className="mb-3 font-normal text-neutral-400">{description}</p>
@@ -42,14 +57,14 @@ const ProjectDetails = ({
                   className="rounded-lg size-10 hover-animation"
                 />
               ))}
+              <a
+                href={href}
+                className="inline-flex items-center gap-1 ml-2 font-medium cursor-pointer hover-animation"
+              >
+                View Project{" "}
+                <img src="assets/arrow-up.svg" className="size-4" alt="" />
+              </a>
             </div>
-            <a
-              href={href}
-              className="inline-flex items-center gap-1 font-medium cursor-pointer hover-animation"
-            >
-              View Project{" "}
-              <img src="assets/arrow-up.svg" className="size-4" alt="" />
-            </a>
           </div>
         </div>
       </motion.div>
