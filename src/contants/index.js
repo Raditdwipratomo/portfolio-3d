@@ -496,7 +496,7 @@ export const myProjects = [
       "Integrated EmailJS for a fully functional contact form, enabling visitors to send messages directly without a backend server.",
       "Implemented a globe visualization with Cobe to highlight geographic presence and add a unique interactive element.",
     ],
-    href: "https://github.com/Raditdwipratomo/portfolio-3d",
+    href: "https://radit-dwi-portofolio.vercel.app/",
     logo: "",
     image: "/assets/projects/3d-porto.png",
     tags: [
