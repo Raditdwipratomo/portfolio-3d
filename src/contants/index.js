@@ -484,6 +484,49 @@ export const myProjects = [
       },
     ],
   },
+  {
+    id: 14,
+    title: "3D Portfolio Website",
+    description:
+      "A stunning, interactive 3D portfolio website built with React, Three.js, and Vite — designed to showcase projects, experience, and skills with immersive visuals and smooth animations.",
+    subDescription: [
+      "Built an immersive 3D experience using React Three Fiber and Drei, rendering interactive 3D models and scenes directly in the browser.",
+      "Designed fluid page transitions and scroll-based animations using the Motion library for a polished, modern user experience.",
+      "Styled the entire interface with Tailwind CSS v4, ensuring a responsive and visually cohesive dark-themed design across all devices.",
+      "Integrated EmailJS for a fully functional contact form, enabling visitors to send messages directly without a backend server.",
+      "Implemented a globe visualization with Cobe to highlight geographic presence and add a unique interactive element.",
+    ],
+    href: "https://github.com/Raditdwipratomo/portfolio-3d",
+    logo: "",
+    image: "/assets/projects/3d-porto.png",
+    tags: [
+      {
+        id: 1,
+        name: "React",
+        path: "/assets/logos/react.svg",
+      },
+      {
+        id: 2,
+        name: "Three.js",
+        path: "/assets/logos/threejs.svg",
+      },
+      {
+        id: 3,
+        name: "Vite",
+        path: "/assets/logos/vitejs.svg",
+      },
+      {
+        id: 4,
+        name: "TailwindCSS",
+        path: "/assets/logos/tailwindcss.svg",
+      },
+      {
+        id: 5,
+        name: "JavaScript",
+        path: "/assets/logos/javascript.svg",
+      },
+    ],
+  },
 ];
 
 export const mySocials = [
